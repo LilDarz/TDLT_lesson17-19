@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tập tạo và sử dụng hàm B4</title>
+</head>
+
+<body>
+    <script>
+        function tinhToanHinhTron(banKinh) {
+            let dienTich = Math.pow(banKinh, 2) * Math.PI;
+            let chuVi = banKinh * 2 * Math.PI;
+            document.write(`Diện tích hình tròn có bán kính ${banKinh} là ${dienTich}<br>`);
+            document.write(`Chu vi hình tròn có bán kính ${banKinh} là ${chuVi}<br>`);
+        }
+        tinhToanHinhTron(9);
+    </script>
+</body>
+
+</html>

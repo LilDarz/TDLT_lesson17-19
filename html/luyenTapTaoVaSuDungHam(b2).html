@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập luyện và sử dựng hàm (b2)</title>
+</head>
+
+<body>
+    <script>
+        let tenNgoiSao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let tenChomSao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        function timNgoiVaChomSao(starName) {
+            console.log(tenNgoiSao.indexOf(starName));
+            if (tenNgoiSao.indexOf(starName) == -1) {
+                document.write(`Không tìm thấy ngôi sao bạn muốn tìm`);
+            } else {
+                document.write(`Chòm sao ứng với ngôi sao ${tenNgoiSao[tenNgoiSao.indexOf(starName)]} là ${tenChomSao[tenNgoiSao.indexOf(starName)]}`);
+            }
+        }
+        let searchStars = prompt("Nhập tên của ngôi sao bạn muốn tìm vào");
+        timNgoiVaChomSao(searchStars);
+    </script>
+</body>
+
+</html>
